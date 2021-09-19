@@ -19,11 +19,11 @@ spec:
           image: mysql
           resources:
             requests:
-              memory: "64Mi"
-              cpu: "250m"
+              cpu: "300m"
+              memory: "512Mi"
             limits:
-              memory: "128Mi"
               cpu: "500m"
+              memory: "1Gi"
           ports:
             - containerPort: 3306
           envFrom:
@@ -33,11 +33,11 @@ spec:
           image: phpmyadmin
           resources:
             requests:
-              memory: "64Mi"
-              cpu: "250m"
+              cpu: "300m"
+              memory: "512Mi"
             limits:
-              memory: "128Mi"
               cpu: "500m"
+              memory: "1Gi"
           ports:
             - containerPort: 80
           envFrom:
