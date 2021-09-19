@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: configmap-hafiz
+data:
+  MYSQL_ROOT_PASSWORD: k8s-is-ez
+  PMA_HOST: service-hafiz
+  PMA_PORT: '3306'
+  PMA_USER: root
+  PMA_PASSWORD: k8s-is-ez
+  PMA_ARBITRARY: '1'
